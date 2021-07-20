@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap"
+      rel="stylesheet"
+    />
+    <title>New School Etch-a-Sketch by CodaVerse</title>
+    <meta
+      name="An Etch-a-Sketch page as a learning exercise created as part of The-Odin-Project's curriculum"
+      content=""
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" async defer></script>
+  </head>
+  <body>
+    <header>
+      <div id="header">New School Etch-a-Sketch</div>
+    </header>
+    <br />
+    <main id="main">
+      <aside>
+        <div class="slidecontainer">
+          <p id="slidertitle">Pixels per side:</p>
+          <input
+            type="range"
+            id="slider"
+            min="5"
+            max="65"
+            value="35"
+            onchange="rebuildGrid()"
+          />
+        </div>
+        <div id="pencolordiv">
+          <div><label for="colorpicker">Pen Color:</label></div>
+          <div><input type="color" id="pencolorpicker" value="#89b34a" /></div>
+        </div>
+        <div id="bgcolordiv">
+          <div><label for="colorpicker">Background Color:</label></div>
+          <div><input type="color" id="bgcolorpicker" value="#887aad" /></div>
+        </div>
+        <div class="reset">
+          <button id="resetbutton" onclick="rebuildGrid()">Reset Canvas</button>
+        </div>
+        <div id="author">
+          <p id="createdby">Created by:</p>
+          <p id="codaverse">CodaVerse (2021)</p>
+        </div>
+      </aside>
+      <div id="container"></div>
+      <div id="rightSideGradient">
+        <div id="div1" class="gradientdivs"></div>
+        <div id="div2" class="gradientdivs"></div>
+        <div id="div3" class="gradientdivs"></div>
+        <div id="div4" class="gradientdivs"></div>
+        <div id="div5" class="gradientdivs"></div>
+        <div id="div6" class="gradientdivs"></div>
+        <div id="div7" class="gradientdivs"></div>
+      </div>
+      <div id="divider"></div>
+    </main>
+  </body>
+</html>
